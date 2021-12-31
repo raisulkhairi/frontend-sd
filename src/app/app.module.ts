@@ -6,17 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeadmasterComponent } from './headmaster/headmaster.component';
 import { SidenavComponent } from './headmaster/component/sidenav/sidenav.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// import {} from ''
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeadmasterComponent,
-    SidenavComponent,
-  ],
+  declarations: [AppComponent, HeadmasterComponent, SidenavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +25,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
