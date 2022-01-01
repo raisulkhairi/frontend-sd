@@ -21,7 +21,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     CommonModule,
     HeadmasterRoutingModule,
     MatTabsModule,
-    MatGridListModule
+    MatGridListModule,
   ]
 })
 export class HeadmasterModule { }
