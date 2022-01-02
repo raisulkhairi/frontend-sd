@@ -9,6 +9,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import { AddTeacherComponent } from './add-teacher/add-teacher.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddParentComponent } from './add-parent/add-parent.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +22,19 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ParentComponent,
     DashboardComponent,
     TeacherComponent,
+    AddTeacherComponent,
+    AddStudentComponent,
+    AddParentComponent,
   ],
   imports: [
     CommonModule,
     HeadmasterRoutingModule,
     MatTabsModule,
     MatGridListModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule
+    
   ]
 })
 export class HeadmasterModule { }

@@ -11,15 +11,15 @@
 
             <li><a (click)="showTeacher = !showTeacher" class="nav-link"><i class="fas fa-user-graduate"></i>Teacher</a></li>
             <li><a *ngIf="showTeacher" routerLink="/headmaster/teacher">Teacher List</a></li>
-            <li><a *ngIf="showTeacher" routerLink="/headmaster/teacher"> Add Teacher</a></li>
+            <li><a *ngIf="showTeacher" routerLink="/headmaster/add-teacher"> Add Teacher</a></li>
 
             <li><a (click)="showStudent=!showStudent" class="nav-link"><i class="fas fa-users"></i> Student</a></li>
             <li><a *ngIf="showStudent" routerLink="/headmaster/student">Student List</a></li>
-            <li><a *ngIf="showStudent" routerLink="/headmaster/student"> Add Student</a></li>
+            <li><a *ngIf="showStudent" routerLink="/headmaster/add-student"> Admission Form</a></li>
 
             <li><a (click)="showParent=!showParent" class="nav-link"><i class="fas fa-user-secret"></i>Parent</a></li>
-            <li><a *ngIf="showParent" routerLink="/headmaster/student">Parent List</a></li>
-            <li><a *ngIf="showParent" routerLink="/headmaster/student"> Add Parent</a></li>
+            <li><a *ngIf="showParent" routerLink="/headmaster/parent">Parent List</a></li>
+            <li><a *ngIf="showParent" routerLink="/headmaster/add-parent"> Add Parent</a></li>
         </ul>
     </mat-sidenav>
     <mat-sidenav-content>
