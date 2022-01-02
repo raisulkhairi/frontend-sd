@@ -9,6 +9,10 @@ export class SidenavComponent implements OnInit {
 
   opened=false;
 
+  showTeacher = false
+  showStudent = false
+  showParent = false
+
   constructor() { }
 
   ngOnInit(): void {
