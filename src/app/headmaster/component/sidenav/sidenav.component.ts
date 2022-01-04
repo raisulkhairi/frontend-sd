@@ -12,6 +12,7 @@ export class SidenavComponent implements OnInit {
   showTeacher = false
   showStudent = false
   showParent = false
+  showClass = false
 
   constructor() { }
 

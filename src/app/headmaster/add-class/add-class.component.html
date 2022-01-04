@@ -1,0 +1,63 @@
+<mat-tab-group>
+    <mat-tab label="Add Student">
+        <div class="title">
+            <p>Classes</p>
+        </div>
+        <div class="route">
+            <p>Home <span> > Add New Class</span></p>
+        </div>
+        <div class="container">
+            <form action="">
+                <div class="name-form">
+                    <p>Add New Class Schedule</p>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Teacher Name*</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID No</label>
+                    <input type="text" class="form-control" id="id">
+                </div>
+                <div class="mb-3">
+                    <label for="class" class="form-label">Class</label>
+                    <input type="text" class="form-control" id="class">
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject*</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+                <div class="mb-3">
+                    <label for="section" class="form-label">Section*</label>
+                    <input type="text" class="form-control" id="section">
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time*</label>
+                    <input type="text" class="form-control" id="time">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date*</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <mat-radio-group aria-label="Select an option">
+                    <div class="gender">
+                        <label for="gender" class="form-label">Gender</label> <br>
+                        <mat-radio-button value="1">Male</mat-radio-button>
+                        <mat-radio-button value="2">Female</mat-radio-button>
+                    </div>
+                </mat-radio-group>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="phone" class="form-control" id="phone">
+                </div>
+                <button class="save">
+                    <p>Save</p>
+                </button>
+                <button class="reset">
+                    <p>Reset</p>
+                </button>
+            </form>
+        </div>
+
+    </mat-tab>
+</mat-tab-group>

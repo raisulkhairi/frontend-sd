@@ -14,6 +14,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddParentComponent } from './add-parent/add-parent.component';
+import { ClassComponent } from './class/class.component';
+import { AddClassComponent } from './add-class/add-class.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { AddParentComponent } from './add-parent/add-parent.component';
     AddTeacherComponent,
     AddStudentComponent,
     AddParentComponent,
+    ClassComponent,
+    AddClassComponent,
   ],
   imports: [
     CommonModule,

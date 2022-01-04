@@ -1,9 +1,28 @@
+table {
+    margin-top: 50px;
+    margin: 0 auto;
+}
+table th {
+    border-bottom: 1px solid black;
+    padding: 0 40px;
+}
+.container-table {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.mat-tab-label .mat-tab-label-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    color: black !important;
+}
 .title {
     font-size: 30px;
     font-weight: 500;
     margin-top: 18px;
     margin-left: 35px;
-
 }
 .route {
     font-size: 15px;
@@ -29,6 +48,7 @@ span {
 li {
     list-style: none;
 }
+
 input[type="date"] {
     margin: 0 53px;
 }
@@ -45,9 +65,6 @@ form {
 .gender span {
     color: #212529;
 }
-.mat-tab-label {
-    color: black !important;
-}
 .save {
     height: 60px;
     width: 97px;
@@ -57,17 +74,17 @@ form {
     border-radius: 12px;
     background: #dda705;
     border: none;
-    box-shadow: 4px 5px lightgrey;
 }
 .reset {
     height: 60px;
     width: 97px;
     margin: 0 11px;
     align-items: center;
-    text-align: center;
+    text-align: center; 
     border-radius: 12px;
     background: #fff;
     border: none;
+    box-shadow: 4px 5px lightgrey;
 }
 .reset:hover {
     background: #dda705;
@@ -77,6 +94,6 @@ button p {
     font-weight: bolder;
     letter-spacing: 0.1rem;
 }
-.button{
+.button {
     margin-top: 10px;
 }

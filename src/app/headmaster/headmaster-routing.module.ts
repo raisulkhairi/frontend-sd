@@ -1,8 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddClassComponent } from './add-class/add-class.component';
 import { AddParentComponent } from './add-parent/add-parent.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
+import { ClassComponent } from './class/class.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeadmasterComponent } from './headmaster.component';
 import { ParentComponent } from './parent/parent.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
       {
         path:'add-parent',
         component :AddParentComponent,
+      },
+      {
+        path:'class',
+        component:ClassComponent,
+      },
+      {
+        path:'add-class',
+        component:AddClassComponent,
       }
 
     ]
