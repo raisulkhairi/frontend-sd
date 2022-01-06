@@ -16,6 +16,9 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { AddParentComponent } from './add-parent/add-parent.component';
 import { ClassComponent } from './class/class.component';
 import { AddClassComponent } from './add-class/add-class.component';
+import { ChartdoughnutComponent } from './component/chartdoughnut/chartdoughnut.component';
+import { NgChartsModule } from 'ng2-charts';
+import { ChartbarComponent } from './component/chartbar/chartbar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,8 @@ import { AddClassComponent } from './add-class/add-class.component';
     AddParentComponent,
     ClassComponent,
     AddClassComponent,
+    ChartdoughnutComponent,
+    ChartbarComponent,
   ],
   imports: [
     CommonModule,
@@ -37,8 +42,8 @@ import { AddClassComponent } from './add-class/add-class.component';
     MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatRadioModule
-    
+    MatRadioModule,
+    NgChartsModule
   ]
 })
 export class HeadmasterModule { }

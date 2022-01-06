@@ -1,4 +1,6 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Student } from '../models/student';
+import { StudentService } from '../services/student.service';
 
 @Component({
   selector: 'app-student',
@@ -8,9 +10,14 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private studentService:StudentService) { }
+  students: Student[]=[]
 
   ngOnInit(): void {
+    this.studentService.getAllStudent().subscribe(result => {
+      this.students= result
+      console.log(this.students)
+    })
   }
 
 }

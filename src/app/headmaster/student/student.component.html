@@ -52,6 +52,18 @@
                     <td><p>08120201201</p></td>
                     <td><p>Raisul20@gmail.com</p></td>
                 </tr>
+                <tr *ngFor="let data of students">
+                    <td><p>{{data.id}}</p></td>
+                    <td><p><img src="{{data.image}}" alt="" width="50" height="50"></p></td>
+                    <td><p>{{data.first_name}} {{data.last_name}}</p></td>
+                    <td><p>{{data.gender}}</p></td>
+                    <td><p>{{data.kelas._id}}</p></td>
+                    <td><p>{{data.kelas.class_name}}</p></td>
+                    <td><p>{{data.section}}</p></td>
+                    <td><p>{{data.address}}</p></td>
+                    <td><p>{{data.phone}}</p></td>
+                    <td><p>{{data.email}}</p></td>
+                </tr>
             </table>
         </div>
     </mat-tab>

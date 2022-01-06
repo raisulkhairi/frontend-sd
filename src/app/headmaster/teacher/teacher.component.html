@@ -40,36 +40,36 @@
                         <p>E mail</p>
                     </th>
                 </tr>
-                <tr>
+                <tr *ngFor="let data of teachers">
                     <td>
-                        <p>#001</p>
+                        <p>{{data._id}}</p>
                     </td>
                     <td>
-                        <p>no-image</p>
+                        <p>{{data.image}}</p>
                     </td>
                     <td>
-                        <p>Raisul khairi</p>
+                        <p>{{data.first_name}} {{data.last_name}}</p>
                     </td>
                     <td>
-                        <p>Male</p>
+                        <p>{{data.gender}}</p>
                     </td>
                     <td>
-                        <p>2</p>
+                        <p>blm</p>
                     </td>
                     <td>
-                        <p>English</p>
+                        <p>blm</p>
                     </td>
                     <td>
-                        <p>A</p>
+                        <p>{{data.blood_group}}</p>
                     </td>
                     <td>
-                        <p>59 Australia, Sydney</p>
+                        <p>{{data.address}}</p>
                     </td>
                     <td>
-                        <p>08120201201</p>
+                        <p>{{data.phone}}</p>
                     </td>
                     <td>
-                        <p>Raisul20@gmail.com</p>
+                        <p>{{data.email}}</p>
                     </td>
                 </tr>
             </table>

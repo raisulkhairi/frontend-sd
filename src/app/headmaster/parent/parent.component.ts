@@ -1,4 +1,6 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Parent } from '../models/parent';
+import { ParentService } from '../services/parent.service';
 
 @Component({
   selector: 'app-parent',
@@ -8,9 +10,14 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private parentService:ParentService) { }
+  parents: Parent[]=[]
 
   ngOnInit(): void {
+    this.parentService.getAllParent().subscribe(result => {
+      this.parents= result
+      console.log(this.parents)
+    })
   }
 
 }

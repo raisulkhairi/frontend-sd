@@ -60,6 +60,32 @@
                         <p>yonyulsman@gmail.com</p>
                     </td>
                 </tr>
+                <tr *ngFor="let data of parents">
+                    <td>
+                        <p>{{data._id}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.image}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.first_name}} {{data.last_name}}</p>
+                    </td>
+                    <td>
+                        <p>{{data. gender}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.occupation}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.address}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.phone}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.email}}</p>
+                    </td>
+                </tr>
             </table>
         </div>
     </mat-tab>
