@@ -7,7 +7,7 @@ mat-sidenav,mat-sidenav-content{
     padding: 16px;
 }
 mat-sidenav{
-    width: 200px;
+    width: 220px;
 }
 .menu{
     cursor: pointer;
@@ -20,6 +20,7 @@ mat-sidenav{
     justify-content:space-between;
     align-items: center;
     width: 153px;
+    margin: auto;
 }
 .name {
     height: 20px;
@@ -43,4 +44,7 @@ p {
 }
 .list li a:hover{
     color: rgb(241, 88, 88);
+}
+a.nav-link {
+    cursor: pointer;
 }

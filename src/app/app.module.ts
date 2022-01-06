@@ -9,12 +9,19 @@ import { SidenavComponent } from './headmaster/component/sidenav/sidenav.compone
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 // import {} from ''
 
 @NgModule({
-  declarations: [AppComponent, HeadmasterComponent, SidenavComponent],
+
+  declarations: [
+    AppComponent,
+    HeadmasterComponent, 
+    SidenavComponent,
+  ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,7 +29,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatToolbarModule,
     MatSidenavModule,
     FormsModule,
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

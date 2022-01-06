@@ -1,13 +1,13 @@
-table{
+table {
     margin-top: 60px;
     margin: 0 auto;
     overflow: visible;
 }
-table th{
+table th {
     border-bottom: 1px solid black;
     padding: 0 40px;
 }
-.container-table{
+.container-table {
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -18,4 +18,55 @@ table th{
     align-items: center;
     white-space: nowrap;
     color: black !important;
+}
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-left: 35px;
+
+}
+.route {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+span {
+    color: #cd3a0e;
+}
+.name-form {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.box-form {
+    border: 1px solid;
+    width: 90%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 11px;
+}
+li {
+    list-style: none;
+}
+input[type="text"] {
+    margin: 0 45px;
+}
+input[type="date"] {
+    margin: 0 53px;
+}
+select {
+    margin: 0 38px;
+}
+input[type="date"].form-control {
+    margin-left: 0;
+}
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+.gender span {
+    color: #212529;
 }

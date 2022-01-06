@@ -1,5 +1,6 @@
 table{
     margin-top: 50px;
+    overflow: none;
     margin: 0 auto;
 }
 table th{
@@ -7,15 +8,11 @@ table th{
     padding: 0 40px;
 }
 .container-table{
-    width: 100%;
+    width: 100%; 
     text-align: center;
     justify-content: center;
 }
-.mat-tab-label .mat-tab-label-content {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
+.mat-tab-label {
     color: black !important;
 }
 .title {
@@ -49,9 +46,6 @@ span {
 }
 li {
     list-style: none;
-}
-input[type="text"] {
-    margin: 0 45px;
 }
 input[type="date"] {
     margin: 0 53px;
