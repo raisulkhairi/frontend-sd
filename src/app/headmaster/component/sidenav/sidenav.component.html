@@ -24,6 +24,10 @@
             <li><a (click)="showClass=!showClass" class="nav-link"><i class="fas fa-user-secret"></i>Class</a></li>
             <li><a *ngIf="showClass" routerLink="/headmaster/class">All Classes</a></li>
             <li><a *ngIf="showClass" routerLink="/headmaster/add-class"> Add New Class</a></li>
+
+            <li><a (click)="showSubject=!showSubject" class="nav-link"><i class="fas fa-user-secret"></i>Subject</a></li>
+            <li><a *ngIf="showSubject" routerLink="/headmaster/subject">All Subject</a></li>
+            <li><a *ngIf="showSubject" routerLink="/headmaster/add-subject"> Add New Subject</a></li>
         </ul>
     </mat-sidenav>
     <mat-sidenav-content>

@@ -1,0 +1,56 @@
+.profil img{
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid rgb(204, 201, 201);
+}
+.profil{
+    // margin-right: 200px;
+}
+.name h1{
+    font-size: 49px;
+    font-family: inherit;
+    letter-spacing: 12px;
+}
+.name{
+    width: 100%;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px grey;
+    width: 50%;
+}
+.display{
+    display: flex;
+}
+p.sub {
+    width: 250px;
+    color: #5c5c5c;
+    font-weight: 300;
+    margin-left: 10vh;
+    margin-top: 4px;
+    border: 1px solid;
+}
+.bio{
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+p {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.head p{
+    font-size: 30px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 25px;
+}

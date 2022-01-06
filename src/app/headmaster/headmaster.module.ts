@@ -16,6 +16,11 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { AddParentComponent } from './add-parent/add-parent.component';
 import { ClassComponent } from './class/class.component';
 import { AddClassComponent } from './add-class/add-class.component';
+import { SubjectComponent } from './subject/subject.component';
+import { AddSubjectComponent } from './add-subject/add-subject.component';
+import { ParentDetailComponent } from './parent-detail/parent-detail.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,11 @@ import { AddClassComponent } from './add-class/add-class.component';
     AddParentComponent,
     ClassComponent,
     AddClassComponent,
+    SubjectComponent,
+    AddSubjectComponent,
+    ParentDetailComponent,
+    StudentDetailComponent,
+    TeacherDetailComponent,
   ],
   imports: [
     CommonModule,

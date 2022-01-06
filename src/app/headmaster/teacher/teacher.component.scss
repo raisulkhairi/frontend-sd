@@ -51,9 +51,6 @@ span {
 li {
     list-style: none;
 }
-input[type="text"] {
-    margin: 0 45px;
-}
 input[type="date"] {
     margin: 0 53px;
 }
@@ -69,4 +66,8 @@ form {
 }
 .gender span {
     color: #212529;
+}
+img {
+    height: 49px;
+    border-radius: 100%;
 }
