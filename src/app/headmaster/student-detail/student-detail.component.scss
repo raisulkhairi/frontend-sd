@@ -10,13 +10,14 @@
     font-size: 49px;
     font-family: inherit;
     letter-spacing: 12px;
+    color: #3f3f3f;
 }
 .name{
     width: 100%;
     text-align: center;
 }
 
-.head{
+.head-bio{
     display: flex;
     align-items: center;
 }
@@ -36,7 +37,6 @@ p.sub {
     font-weight: 300;
     margin-left: 10vh;
     margin-top: 4px;
-    border: 1px solid;
 }
 .bio{
     margin: 0 auto;
