@@ -1,7 +1,11 @@
 <mat-tab-group>
     <mat-tab label="All Classes">
-        <div class="title"><p>Classes</p></div>
-        <div class="route"><p>Home <span> > All Classes</span></p></div>
+        <div class="title">
+            <p>Classes</p>
+        </div>
+        <div class="route">
+            <p>Home <span> > All Classes</span></p>
+        </div>
         <div class="container-table">
             <table>
                 <tr class="header">
@@ -9,25 +13,13 @@
                         <p>Id</p>
                     </th>
                     <th>
-                        <p>Photo</p>
+                        <p>Name class</p>
                     </th>
                     <th>
-                        <p>Name</p>
+                        <p>Teacher</p>
                     </th>
                     <th>
-                        <p>Gender</p>
-                    </th>
-                    <th>
-                        <p>Class</p>
-                    </th>
-                    <th>
-                        <p>Section</p>
-                    </th>
-                    <th>
-                        <p>date</p>
-                    </th>
-                    <th>
-                        <p>time</p>
+                        <p>Subject</p>
                     </th>
                     <th>
                         <p>Phone</p>
@@ -36,17 +28,27 @@
                         <p>E mail</p>
                     </th>
                 </tr>
-                <tr>
-                    <td><p>#001</p></td>
-                    <td><p>no-image</p></td>
-                    <td><p>Raisul khairi</p></td>
-                    <td><p>Male</p></td>
-                    <td><p>2</p></td>
-                    <td><p>A</p></td>
-                    <td><p>59 Australia, Sydney</p></td>
-                    <td><p>10.00 am-11.30 am</p></td>
-                    <td><p>081220361299</p></td>
-                    <td><p>raisulkhairi20@gmail.com</p></td>
+                <tr *ngFor='let data of kelas'>
+                    <td>
+                        <p>{{data._id}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.class_name}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.teacher.first_name}} {{data.teacher.last_name}}</p>
+                    </td>
+                    <td>
+                        <p *ngFor='let subject of data.subject'>
+                            {{subject.subject_name}}
+                        </p>
+                    </td>
+                    <td>
+                        <p>{{data.teacher.phone}}</p>
+                    </td>
+                    <td>
+                        <p>{{data.teacher.email}}</p>
+                    </td>
                 </tr>
             </table>
         </div>

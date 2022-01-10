@@ -28,7 +28,7 @@
                         <p>Subject</p>
                     </th>
                     <th>
-                        <p>Section</p>
+                        <p>blood group</p>
                     </th>
                     <th>
                         <p>Address</p>
@@ -40,12 +40,12 @@
                         <p>E mail</p>
                     </th>
                 </tr>
-                <tr *ngFor="let data of teachers">
+                <tr *ngFor="let data of teachers" class="content-list">
                     <td>
                         <p>{{data._id}}</p>
                     </td>
                     <td>
-                        <p>{{data.image}}</p>
+                        <p><img src="{{data.image}}" alt=""> </p>
                     </td>
                     <td>
                         <p>{{data.first_name}} {{data.last_name}}</p>
@@ -54,11 +54,13 @@
                         <p>{{data.gender}}</p>
                     </td>
                     <td>
-                        <p>blm</p>
+                        <p>{{data.kelas.class_name}}</p>
                     </td>
                     <td>
-                        <p>blm</p>
-                    </td>
+                        <p *ngFor='let subject of data.Subject'>
+                            {{subject.subject_name}}
+                        </p>
+                    </td>   
                     <td>
                         <p>{{data.blood_group}}</p>
                     </td>

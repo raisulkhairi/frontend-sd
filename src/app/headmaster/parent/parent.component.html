@@ -34,38 +34,12 @@
                         <p>E mail</p>
                     </th>
                 </tr>
-                <tr>
-                    <td>
-                        <p>#001</p>
-                    </td>
-                    <td>
-                        <p>no-image</p>
-                    </td>
-                    <td>
-                        <p>Yonyulisman</p>
-                    </td>
-                    <td>
-                        <p>Male</p>
-                    </td>
-                    <td>
-                        <p>Businessman</p>
-                    </td>
-                    <td>
-                        <p>59 Australia, Sydney</p>
-                    </td>
-                    <td>
-                        <p>08120201201</p>
-                    </td>
-                    <td>
-                        <p>yonyulsman@gmail.com</p>
-                    </td>
-                </tr>
                 <tr *ngFor="let data of parents">
                     <td>
                         <p>{{data._id}}</p>
                     </td>
                     <td>
-                        <p>{{data.image}}</p>
+                        <div class="profil"><img src="{{data.image}}" alt=""></div>
                     </td>
                     <td>
                         <p>{{data.first_name}} {{data.last_name}}</p>

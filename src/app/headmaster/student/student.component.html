@@ -25,12 +25,6 @@
                         <p>Class</p>
                     </th>
                     <th>
-                        <p>Subject</p>
-                    </th>
-                    <th>
-                        <p>Section</p>
-                    </th>
-                    <th>
                         <p>Address</p>
                     </th>
                     <th>
@@ -40,26 +34,12 @@
                         <p>E mail</p>
                     </th>
                 </tr>
-                <tr>
-                    <td><p>#001</p></td>
-                    <td><p>no-image</p></td>
-                    <td><p>Raisul khairi</p></td>
-                    <td><p>Male</p></td>
-                    <td><p>2</p></td>
-                    <td><p>English</p></td>
-                    <td><p>A</p></td>
-                    <td><p>59 Australia, Sydney</p></td>
-                    <td><p>08120201201</p></td>
-                    <td><p>Raisul20@gmail.com</p></td>
-                </tr>
                 <tr *ngFor="let data of students">
                     <td><p>{{data.id}}</p></td>
                     <td><p><img src="{{data.image}}" alt="" width="50" height="50"></p></td>
                     <td><p>{{data.first_name}} {{data.last_name}}</p></td>
                     <td><p>{{data.gender}}</p></td>
-                    <td><p>{{data.kelas._id}}</p></td>
                     <td><p>{{data.kelas.class_name}}</p></td>
-                    <td><p>{{data.section}}</p></td>
                     <td><p>{{data.address}}</p></td>
                     <td><p>{{data.phone}}</p></td>
                     <td><p>{{data.email}}</p></td>

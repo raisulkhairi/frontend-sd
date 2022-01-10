@@ -10,9 +10,9 @@ export class StudentService {
   constructor(private http: HttpClient) { }
   
   getTotalStudent():Observable<any>{
-    return this.http.get<any>('http://localhost:3000/api/student/count')
+    return this.http.get<any>('https://final-project-app-v1.herokuapp.com/api/student/count')
   }
   getAllStudent():Observable<any>{
-    return this.http.get<any>('http://localhost:3000/api/student')
+    return this.http.get<any>('https://final-project-app-v1.herokuapp.com/api/student')
   }
 }

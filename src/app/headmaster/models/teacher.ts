@@ -14,8 +14,14 @@ export class Teacher {
     short_bio?:string
     image?: string
     role?: string
-    // kelas!: {
-    //     _id?: string
-    //     class_name?: string
-    // }
+    kelas!: {
+        _id?: string
+        class_name?: string
+    }
+    Subject!:[
+        {
+            subject_name?:string
+
+        }
+    ]
 }

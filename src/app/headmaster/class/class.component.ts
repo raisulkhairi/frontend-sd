@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { kelas } from '../models/kelas';
+import { KelasServices } from '../services/kelas.service';
 
 @Component({
   selector: 'app-class',
@@ -8,9 +10,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ClassComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private kelasService:KelasServices) { }
+  kelas:kelas[]=[]
   ngOnInit(): void {
+    this.kelasService.getAllClass().subscribe(result=>{
+      this.kelas=result
+      console.log(this.kelas)
+    })
   }
 
 }

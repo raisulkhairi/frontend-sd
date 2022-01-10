@@ -10,10 +10,10 @@ export class ParentService {
   constructor(private http: HttpClient) { }
 
   getTotalParent():Observable<any>{
-    return this.http.get<any>('http://localhost:3000/api/parent/count')
+    return this.http.get<any>('https://final-project-app-v1.herokuapp.com/api/parent/count')
   }
   getAllParent():Observable<any>{
-    return this.http.get<any>('http://localhost:3000/api/parent')
+    return this.http.get<any>('https://final-project-app-v1.herokuapp.com/api/parent')
   }
   
 }

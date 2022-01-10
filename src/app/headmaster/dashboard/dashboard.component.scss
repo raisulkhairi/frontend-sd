@@ -42,6 +42,16 @@
 span {
     color: #cd3a0e;
 }
+.container-charts{
+    align-items: center;
+    display: flex;
+    margin-top: 43px;
+    justify-content: space-between;
+    height: auto;
+    background: white;
+    padding: 0 20vh;
+    box-shadow: 2px 2px rgb(197, 197, 197);
+}
 @media (min-width: 1200px){
     .container{
         max-width: 100%;
